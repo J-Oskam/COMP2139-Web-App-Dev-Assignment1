@@ -21,12 +21,12 @@ namespace Assignment1.Models {
         [MaxLength(10)]
         public string userId { get; set; }
 
-        public int bookingTypeId { get; set; }
+        public int bookingTypeId { get; set; } //foreign key
 
-
+        public BookingType BookingType { get; set; } //navigation property
 
         [MaxLength(10)]
-        public string? flightId { get; set; }
+        public string? flightId { get; set; } //add navigation properties once known
 
         [MaxLength(10)]
         public string? rentalId { get; set; }

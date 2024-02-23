@@ -3,9 +3,9 @@
 namespace Assignment1.Models {
     public class BookingType {
         [Key]
-        public int BookingTypeId;
+        public int BookingTypeId { get; set; }
 
         [MaxLength(100)]
-        public string TypeName;
+        public string TypeName { get; set; }
     }
 }
