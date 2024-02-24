@@ -1,14 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\exurl\\source\\repos\\Assignment 1\\Assignment1\\",
+  "WorkspaceRootPath": "C:\\Users\\Justin\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Assignment 1\\Assignment1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|c:\\users\\exurl\\source\\repos\\assignment 1\\assignment1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|c:\\users\\justin\\desktop\\my stuff\\school\\computer programming analysis\\semester 4\\comp 2139 - web app dev\\assignment 1\\assignment1\\models\\bookingtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|solutionrelative:models\\bookingtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|c:\\users\\exurl\\source\\repos\\assignment 1\\assignment1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|c:\\users\\justin\\desktop\\my stuff\\school\\computer programming analysis\\semester 4\\comp 2139 - web app dev\\assignment 1\\assignment1\\models\\bookings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|solutionrelative:models\\bookings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|c:\\users\\justin\\desktop\\my stuff\\school\\computer programming analysis\\semester 4\\comp 2139 - web app dev\\assignment 1\\assignment1\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|solutionrelative:controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|c:\\users\\justin\\desktop\\my stuff\\school\\computer programming analysis\\semester 4\\comp 2139 - web app dev\\assignment 1\\assignment1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|c:\\users\\justin\\desktop\\my stuff\\school\\computer programming analysis\\semester 4\\comp 2139 - web app dev\\assignment 1\\assignment1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|c:\\users\\justin\\desktop\\my stuff\\school\\computer programming analysis\\semester 4\\comp 2139 - web app dev\\assignment 1\\assignment1\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|c:\\users\\justin\\desktop\\my stuff\\school\\computer programming analysis\\semester 4\\comp 2139 - web app dev\\assignment 1\\assignment1\\views\\bookings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|solutionrelative:views\\bookings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +38,93 @@
       "DocumentGroups": [
         {
           "DockedWidth": 174,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": -1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookingType.cs",
+              "DocumentMoniker": "C:\\Users\\Justin\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Assignment 1\\Assignment1\\Models\\BookingType.cs",
+              "RelativeDocumentMoniker": "Models\\BookingType.cs",
+              "ToolTip": "C:\\Users\\Justin\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Assignment 1\\Assignment1\\Models\\BookingType.cs",
+              "RelativeToolTip": "Models\\BookingType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-23T17:02:14.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Bookings.cs",
+              "DocumentMoniker": "C:\\Users\\Justin\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Assignment 1\\Assignment1\\Models\\Bookings.cs",
+              "RelativeDocumentMoniker": "Models\\Bookings.cs",
+              "ToolTip": "C:\\Users\\Justin\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Assignment 1\\Assignment1\\Models\\Bookings.cs",
+              "RelativeToolTip": "Models\\Bookings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T15:13:59.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Justin\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Assignment 1\\Assignment1\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Justin\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Assignment 1\\Assignment1\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-02-23T16:35:16.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Justin\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Assignment 1\\Assignment1\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Justin\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Assignment 1\\Assignment1\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-23T16:35:13.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Justin\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Assignment 1\\Assignment1\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Justin\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Assignment 1\\Assignment1\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-23T16:14:26.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Justin\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Assignment 1\\Assignment1\\Views\\Bookings\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Bookings\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Justin\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Assignment 1\\Assignment1\\Views\\Bookings\\Index.cshtml",
+              "RelativeToolTip": "Views\\Bookings\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-23T16:06:35.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookingsController.cs",
+              "DocumentMoniker": "C:\\Users\\Justin\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Assignment 1\\Assignment1\\Controllers\\BookingsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookingsController.cs",
+              "ToolTip": "C:\\Users\\Justin\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Assignment 1\\Assignment1\\Controllers\\BookingsController.cs",
+              "RelativeToolTip": "Controllers\\BookingsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-23T02:26:40.081Z"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -35,32 +140,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\exurl\\source\\repos\\Assignment 1\\Assignment1\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\exurl\\source\\repos\\Assignment 1\\Assignment1\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-23T05:35:07.551Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\exurl\\source\\repos\\Assignment 1\\Assignment1\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\exurl\\source\\repos\\Assignment 1\\Assignment1\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-23T05:33:00.097Z",
-              "EditorCaption": ""
             }
           ]
         }
