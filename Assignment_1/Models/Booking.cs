@@ -21,11 +21,26 @@ namespace Assignment_1.Models
 
         //foreign keys from the other tables and their navigation properties
         [MaxLength(10)]
-        public int userId { get; set; }
+        public int userId { get; set; }//foreign key
+        public User? UserId { get; set; }//navigation property
 
-        public int bookingTypeId { get; set; } //foreign key
+        public int hotelId { get; set; }
+        public Hotel? HotelId { get; set; }
 
-        public BookingType? BookingType { get; set; } //navigation property
+        public int flightId { get; set; }
+        public Flight? FlightId { get; set; }
+
+        public int countryId { get; set; }
+        public Country? CountryId { get; set; }
+
+        public int cityId { get; set; }
+        public City? CityId { get; set; }
+
+        public int rentalId { get; set; }
+        public CarRental? RentalId { get; set; }
+
+        public int bookingTypeId { get; set; }
+        public BookingType? BookingType { get; set; }
 
         //validates end date against start date
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)

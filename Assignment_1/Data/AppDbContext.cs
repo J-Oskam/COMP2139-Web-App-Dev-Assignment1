@@ -21,6 +21,55 @@ namespace Assignment_1.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            modelBuilder.Entity<Booking>().HasData(
+                new Booking
+                {
+                    BookingId = 18,
+                    BookingDate = new DateTime(2024, 2, 21),
+                    StartDate = new DateTime(2024, 3, 5),
+                    EndDate = new DateTime(2024, 3, 15),
+                    TotalPrice = 850.00,
+                    ConfirmationNumber = 45875
+                },
+                new Booking
+                {
+                    BookingId = 51,
+                    BookingDate = new DateTime(2024, 3, 2),
+                    StartDate = new DateTime(2025, 7, 6),
+                    EndDate = new DateTime(2025, 8, 20),
+                    TotalPrice = 760.50,
+                    ConfirmationNumber = 45875
+                }
+            );
+
+            modelBuilder.Entity<Flight>().HasData(
+                new Flight
+                {
+                    FlightId = 1,
+                    Airline = "Air Canada",
+                    Airport = "Toronto Pearson",
+                    ArrivalTime = new DateTime(2021, 8, 4, 23, 58, 30, 999),
+                    DepartureTime = new DateTime(2021, 8, 4, 23, 58, 30, 999),
+                    Availability = 99,
+                    Price = 304,
+                    Specifications = "Economy class",
+                    Location = "Japan"
+                },
+                new Flight
+                {
+                    FlightId = 2,
+                    Airline = "United Airlines",
+                    Airport = "Toronto Pearson",
+                    ArrivalTime = new DateTime(2022, 8, 4, 23, 58, 30, 999),
+                    DepartureTime = new DateTime(2022, 8, 4, 23, 58, 30, 999),
+                    Availability = 5,
+                    Price = 200,
+                    Specifications = "Economy class",
+                    Location = "USA"
+                }
+            );
+
             modelBuilder.Entity<Country>().HasData(
                 new Country { CountryId = 1, CountryName = "United States" },
                 new Country { CountryId = 2, CountryName = "Canada" },
