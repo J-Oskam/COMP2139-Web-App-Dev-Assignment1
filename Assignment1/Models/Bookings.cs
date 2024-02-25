@@ -2,7 +2,7 @@
 namespace Assignment1.Models {
     public class Bookings {
         [Key]
-        public string BookingId { get; set; }
+        public int BookingId { get; set; }
 
         [DataType(DataType.Date)]
         public DateTime BookingDate { get; set; }
@@ -15,7 +15,7 @@ namespace Assignment1.Models {
 
         public float TotalPrice { get; set; } //needs to be 8 digits with 2 decimal places
 
-        public string ConfirmationNumber { get; set; } //unique
+        public int ConfirmationNumber { get; set; } //unique
 
         //foreign keys from the other tables and their navigation properties
         [MaxLength(10)]
