@@ -17,51 +17,51 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Assignment1
 build_property.RootNamespace = Assignment1
-build_property.ProjectDir = C:\Users\exurl\source\repos\Assignment 1\Assignment1\
+build_property.ProjectDir = C:\Users\JPAGo\Source\Repos\COMP2139-Web-App-Dev-Assignment1\Assignment1\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\exurl\source\repos\Assignment 1\Assignment1
+build_property.MSBuildProjectDirectory = C:\Users\JPAGo\Source\Repos\COMP2139-Web-App-Dev-Assignment1\Assignment1
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/exurl/source/repos/Assignment 1/Assignment1/Views/Bookings/Index.cshtml]
+[C:/Users/JPAGo/Source/Repos/COMP2139-Web-App-Dev-Assignment1/Assignment1/Views/Bookings/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/exurl/source/repos/Assignment 1/Assignment1/Views/Home/Index.cshtml]
+[C:/Users/JPAGo/Source/Repos/COMP2139-Web-App-Dev-Assignment1/Assignment1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/exurl/source/repos/Assignment 1/Assignment1/Views/Home/Privacy.cshtml]
+[C:/Users/JPAGo/Source/Repos/COMP2139-Web-App-Dev-Assignment1/Assignment1/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/exurl/source/repos/Assignment 1/Assignment1/Views/Shared/Error.cshtml]
+[C:/Users/JPAGo/Source/Repos/COMP2139-Web-App-Dev-Assignment1/Assignment1/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/exurl/source/repos/Assignment 1/Assignment1/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/JPAGo/Source/Repos/COMP2139-Web-App-Dev-Assignment1/Assignment1/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/exurl/source/repos/Assignment 1/Assignment1/Views/Transportation/Flight.cshtml]
+[C:/Users/JPAGo/Source/Repos/COMP2139-Web-App-Dev-Assignment1/Assignment1/Views/Transportation/Flight.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNwb3J0YXRpb25cRmxpZ2h0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/exurl/source/repos/Assignment 1/Assignment1/Views/Transportation/Index.cshtml]
+[C:/Users/JPAGo/Source/Repos/COMP2139-Web-App-Dev-Assignment1/Assignment1/Views/Transportation/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNwb3J0YXRpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/exurl/source/repos/Assignment 1/Assignment1/Views/_ViewImports.cshtml]
+[C:/Users/JPAGo/Source/Repos/COMP2139-Web-App-Dev-Assignment1/Assignment1/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/exurl/source/repos/Assignment 1/Assignment1/Views/_ViewStart.cshtml]
+[C:/Users/JPAGo/Source/Repos/COMP2139-Web-App-Dev-Assignment1/Assignment1/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/exurl/source/repos/Assignment 1/Assignment1/Views/Shared/_Layout.cshtml]
+[C:/Users/JPAGo/Source/Repos/COMP2139-Web-App-Dev-Assignment1/Assignment1/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-e4gmbr770n
