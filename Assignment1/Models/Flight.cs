@@ -20,8 +20,12 @@ namespace Assignment1.Models
         [DataType(DataType.Date)]
         public DateTime ArrivalTime { get; set; }
 
+        public required string Location { get; set; }
+
         //public List<TransportationDetails>? CarDetails {  get; set; }
 
         public required string Specifications { get; set; }
+
+
     }
 }

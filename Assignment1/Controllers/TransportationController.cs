@@ -1,19 +1,29 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Assignment1.Models;
+using Assignment1.Data;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 
 namespace Assignment1.Controllers
 {
     public class TransportationController : Controller
     {
+        private AppDbContext _db{ get; set; }
+
+        public TransportationController(AppDbContext db)
+        {
+            _db= db;
+        }
         // GET: TransportationController
         public ActionResult Index()
         {
-            return View();
+            var flights = _db.Flights.OrderBy(m => m.FlightId).ToList();
+            return View(flights);
         }
 
         // GET: TransportationController/Details/5
+
         public ActionResult Details(int id)
         {
             return View();
