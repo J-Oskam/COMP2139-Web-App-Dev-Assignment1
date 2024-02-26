@@ -1,0 +1,53 @@
+﻿@model Assignment_1.Models.Hotel
+
+@{
+    ViewData["Title"] = "Hotel Details";
+}
+
+<h2>@Model.HotelName</h2>
+
+<div>
+    <h4>Hotel Information</h4>
+    <hr />
+    <img src="@Url.Content($"~/images/hotels/{Model.HotelId}/default.jpg")" class="card-img-top" style="height: 35em" alt="Image of @Model.HotelName">
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            City
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.City.CityName)
+        </dd>
+        <dt class="col-sm-2">
+            Pricing
+        </dt>
+        <dd class="col-sm-10">
+            <span>$</span>@Model.Pricing
+        </dd>
+        <dt class="col-sm-2">
+            Rating
+        </dt>
+        <dd class="col-sm-10">
+            @for (int i = 0; i < Model.Rating; i++)
+            {
+                <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+            }
+        </dd>
+        @if (!string.IsNullOrEmpty(Model.Amenities))
+        {
+            <dt class="col-sm-2">
+                Amenities
+            </dt>
+            <dd class="col-sm-10">
+                @foreach (var amenity in Model.Amenities.Split(','))
+                {
+                    <span><i class="fa-solid fa-chevron-right"></i>     @amenity</span>
+                }
+            </dd>
+        }
+    </dl>
+</div>
+<div>
+    <a asp-controller="User" asp-action="CreateGuestUser" asp-route-hotelId="@Model.HotelId" class="btn btn-primary">Book Now</a>
+    <a asp-action="Index" class="btn btn-outline-secondary">Back to List</a>
+</div>

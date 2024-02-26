@@ -7,44 +7,30 @@ using System.Diagnostics;
 
 namespace Assignment_1.Controllers
 {
+    //[Route("Transportation")]
     public class FlightsController : Controller
     {
-        private readonly AppDbContext _db;
+        private AppDbContext _db { get; set; }
+
         public FlightsController(AppDbContext db)
         {
             _db = db;
         }
-        // GET: FlightsController
-        [HttpGet]
-        public IActionResult Index()
+        // GET: FlightController
+        public ActionResult Index()
         {
-            //var flights = _db.Flights.ToList();
+            var flights = _db.Flights.OrderBy(m => m.FlightId).ToList();
+            return View(flights);
+        }
+
+        // GET: FlightController/Details/5
+
+        public ActionResult Details(int id)
+        {
             return View();
         }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Index(List<Flight> flights)
-        {
-            /*
-            Debug.WriteLine("posted");
-            var bookedFlights = flights.Where(box => box.IsChecked).ToList();
-    
-            foreach (var flight in bookedFlights)
-            {
-                flight.bookSeat();
-            }
-            //userId can now be tied to flight
-
-            return View(_db.Flights.OrderBy(m => m.FlightId).ToList());
-            */
-
-            return View();
-        }
-
-        // GET: FlightsController/Details/5
-
-        public ActionResult Specifications(int id)
+        public IActionResult Specifications(int id)
         {
             var flight = _db.Flights.FirstOrDefault(f => f.FlightId == id);
             if (flight == null)
@@ -54,15 +40,44 @@ namespace Assignment_1.Controllers
             return View(flight);
         }
 
+        [HttpGet]
+        public IActionResult BookFlight(int id)
+        {
+            var flight = _db.Flights.FirstOrDefault(f => f.FlightId == id);
+            if (flight == null)
+            {
+                return NotFound();
+            }
+            //Display form
+            return View(flight);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult BookFlightConfirm(int FlightId)
+        {
+            var flight = _db.Flights.Find(FlightId);
+            if (flight != null)
+            {
+                flight.Availability -= 1;
+                _db.SaveChanges();
+                return RedirectToAction(nameof(Index));
+
+                //tie the flight to the user ID as well
+
+            }
+            //Only here if project is null
+            return NotFound();
+        }
 
 
-        // GET: FlightsController/Create
+        // GET: FlightController/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: FlightsController/Create
+        // POST: FlightController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
@@ -84,13 +99,13 @@ namespace Assignment_1.Controllers
         public IActionResult AddCarRental() { return View(); }
 
 
-        // GET: FlightsController/Edit/5
+        // GET: FlightController/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: FlightsController/Edit/5
+        // POST: FlightController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
@@ -105,13 +120,13 @@ namespace Assignment_1.Controllers
             }
         }
 
-        // GET: FlightsController/Delete/5
+        // GET: FlightController/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: FlightsController/Delete/5
+        // POST: FlightController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)
