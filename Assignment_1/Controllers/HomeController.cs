@@ -1,21 +1,35 @@
 using Assignment_1.Models;
+using Assignment_1.Data;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using Microsoft.EntityFrameworkCore;
 
 namespace Assignment_1.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly AppDbContext _db;
+        public HomeController(AppDbContext db)
         {
-            _logger = logger;
+            _db = db;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View();
+            var searchQuery = _db.Hotels
+                                .Include(h => h.City)
+                                .ThenInclude(c => c.Country)
+                                .AsQueryable();
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                searchQuery = searchQuery.Where(h => h.HotelName.Contains(searchString) ||
+                                                     h.City.CityName.Contains(searchString) ||
+                                                     h.City.Country.CountryName.Contains(searchString));
+            }
+
+            var hotels = await searchQuery.ToListAsync();
+            return View(hotels);
         }
 
         public IActionResult Privacy()

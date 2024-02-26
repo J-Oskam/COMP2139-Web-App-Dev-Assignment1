@@ -18,6 +18,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\JPAGo\source\repos\Assignment_1
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/JPAGo/source/repos/Assignment_1/Views/CarRentals/BookRental.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyUmVudGFsc1xCb29rUmVudGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JPAGo/source/repos/Assignment_1/Views/CarRentals/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyUmVudGFsc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JPAGo/source/repos/Assignment_1/Views/CarRentals/Specifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyUmVudGFsc1xTcGVjaWZpY2F0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/JPAGo/source/repos/Assignment_1/Views/Flights/BookFlight.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxpZ2h0c1xCb29rRmxpZ2h0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

@@ -30,6 +30,46 @@ namespace Assignment_1.Controllers
             return View();
         }
 
+        public IActionResult Specifications(int id)
+        {
+            var rental = _db.CarRentals.FirstOrDefault(f => f.RentalId == id);
+            if (rental == null)
+            {
+                return NotFound();
+            }
+            return View(rental);
+        }
+
+        [HttpGet]
+        public IActionResult BookRental(int id)
+        {
+            var rental = _db.CarRentals.FirstOrDefault(r => r.RentalId == id);
+            if (rental == null)
+            {
+                return NotFound();
+            }
+            //Display form
+            return View(rental);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult BookRentalConfirm(int RentalId)
+        {
+            var rental = _db.CarRentals.Find(RentalId);
+            if (rental != null)
+            {
+                rental.Availability -= 1;
+                _db.SaveChanges();
+                return RedirectToAction(nameof(Index));
+
+                //tie the flight to the user ID as well
+
+            }
+            //Only here if project is null
+            return NotFound();
+        }
+
         // GET: CarRentalsController/Create
         public ActionResult Create()
         {
