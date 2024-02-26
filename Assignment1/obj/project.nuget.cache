@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YFPnO9i/uvRwbRR0en1hZ0L+x5esFYGkDw0PTWfldCWo4BUsvnbND1rHCRMIVEqFjd06BabUMgBmCCgxUSM9dg==",
+  "dgSpecHash": "HYGBX0UDI7oXWWo1+nC3G+fL8Qdt/ywswbe57cs7icb0/x5YCI0QlzQEAmSIJpmrmIj7wvNN1JBHIrMvkFc9+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\exurl\\source\\repos\\Assignment 1\\Assignment1\\Assignment1.csproj",
+  "projectFilePath": "C:\\Users\\exurl\\Source\\Repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Assignment1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\exurl\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\exurl\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

@@ -1,0 +1,45 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model List<CarRental>
+@{
+    ViewBag.Title = "Rental List";
+}
+
+<title>Rental Index</title>
+
+<h1>Rental list</h1>
+
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Location</th>
+            <th>Year</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Price</th>
+            <th>Rental Company</th>
+            <th>Availability</th>
+            <th>Specifications</th>
+        </tr>
+    </thead>
+<tbody>
+    @foreach (var rental in Model)
+    {
+        <tr>
+            <td><a asp-action="BookFlight" asp-route-id="@rental.RentalId" class="btn btn-danger">Book</a></td>
+            <td>@rental.Location</td>
+            <td>@rental.CarYear</td>
+            <td>@rental.CarMake</td>
+            <td>@rental.CarModel</td>
+            <td>@rental.Price</td>
+            <td>@rental.RentalCompany</td>
+            <td>@rental.Availability</td>
+                <td><a asp-action="Specifications" asp-route-id="@rental.RentalId" class="btn btn-danger">Details</a></td>
+            <!-- If this was car rental, create your own button would be here -->
+        </tr>
+    }
+</tbody>
+</table>

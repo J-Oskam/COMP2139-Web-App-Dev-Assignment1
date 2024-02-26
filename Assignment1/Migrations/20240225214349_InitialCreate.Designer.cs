@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Assignment1.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240225005454_FlightMigration")]
-    partial class FlightMigration
+    [Migration("20240225214349_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -45,15 +45,17 @@ namespace Assignment1.Migrations
 
             modelBuilder.Entity("Assignment1.Models.Bookings", b =>
                 {
-                    b.Property<string>("BookingId")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("BookingId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BookingId"));
 
                     b.Property<DateTime>("BookingDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("ConfirmationNumber")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("ConfirmationNumber")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
@@ -110,9 +112,8 @@ namespace Assignment1.Migrations
                     b.Property<DateTime>("ArrivalTime")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Availability")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Availability")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("DepartureTime")
                         .HasColumnType("datetime2");
@@ -139,7 +140,7 @@ namespace Assignment1.Migrations
                             Airline = "Air Canada",
                             Airport = "Toronto Pearson",
                             ArrivalTime = new DateTime(2021, 8, 4, 23, 58, 30, 999, DateTimeKind.Unspecified),
-                            Availability = "99",
+                            Availability = 99,
                             DepartureTime = new DateTime(2021, 8, 4, 23, 58, 30, 999, DateTimeKind.Unspecified),
                             Location = "Japan",
                             Price = 304,
@@ -151,7 +152,7 @@ namespace Assignment1.Migrations
                             Airline = "United Airlines",
                             Airport = "Toronto Pearson",
                             ArrivalTime = new DateTime(2022, 8, 4, 23, 58, 30, 999, DateTimeKind.Unspecified),
-                            Availability = "5",
+                            Availability = 5,
                             DepartureTime = new DateTime(2022, 8, 4, 23, 58, 30, 999, DateTimeKind.Unspecified),
                             Location = "USA",
                             Price = 200,

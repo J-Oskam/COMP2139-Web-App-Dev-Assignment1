@@ -7,35 +7,77 @@ using System.Diagnostics;
 
 namespace Assignment1.Controllers
 {
-    public class TransportationController : Controller
+    //[Route("Transportation")]
+    public class FlightController : Controller
     {
         private AppDbContext _db{ get; set; }
 
-        public TransportationController(AppDbContext db)
+        public FlightController(AppDbContext db)
         {
             _db= db;
         }
-        // GET: TransportationController
+        // GET: FlightController
         public ActionResult Index()
         {
             var flights = _db.Flights.OrderBy(m => m.FlightId).ToList();
             return View(flights);
         }
 
-        // GET: TransportationController/Details/5
+        // GET: FlightController/Details/5
 
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: TransportationController/Create
+        public IActionResult Specifications(int id)
+        {
+            var flight = _db.Flights.FirstOrDefault(f => f.FlightId == id);
+            if (flight == null)
+            {
+                return NotFound();
+            }
+            return View(flight);
+        }
+
+        [HttpGet]
+        public IActionResult BookFlight(int id)
+        {
+            var flight = _db.Flights.FirstOrDefault(f => f.FlightId == id);
+            if (flight == null)
+            {
+                return NotFound();
+            }
+            //Display form
+            return View(flight);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult BookFlightConfirm(int FlightId)
+        {
+            var flight = _db.Flights.Find(FlightId);
+            if (flight != null)
+            {
+                flight.Availability -=1;
+                _db.SaveChanges();
+                return RedirectToAction(nameof(Index));
+
+                //tie the flight to the user ID as well
+
+            }
+            //Only here if project is null
+            return NotFound();
+        }
+
+
+        // GET: FlightController/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: TransportationController/Create
+        // POST: FlightController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
@@ -57,13 +99,13 @@ namespace Assignment1.Controllers
         public IActionResult AddCarRental() { return View(); }
 
 
-        // GET: TransportationController/Edit/5
+        // GET: FlightController/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: TransportationController/Edit/5
+        // POST: FlightController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
@@ -78,13 +120,13 @@ namespace Assignment1.Controllers
             }
         }
 
-        // GET: TransportationController/Delete/5
+        // GET: FlightController/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: TransportationController/Delete/5
+        // POST: FlightController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)

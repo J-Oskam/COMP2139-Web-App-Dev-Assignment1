@@ -10,10 +10,11 @@
 
 <h1>Flight list</h1>
 
-<a asp-controller="Transportation" asp-action="Select">Choose this flight</a>
+
 <table class="table table-bordered table-striped">
     <thead>
         <tr>
+            <th></th>
             <th>Airport</th>
             <th>Airline</th>
             <th>Location</th>
@@ -21,12 +22,14 @@
             <th>Arrival</th>
             <th>Price</th>
             <th>Availability</th>
+            <th>Specifications</th>
         </tr>
     </thead>
 <tbody>
     @foreach (var flight in Model)
     {
         <tr>
+            <td><a asp-action="BookFlight" asp-route-id="@flight.FlightId" class="btn btn-danger">Book</a></td>
             <td>@flight.Airport</td>
             <td>@flight.Airline</td>
             <td>@flight.Location</td>
@@ -34,7 +37,7 @@
             <td>@flight.ArrivalTime</td>
             <td>@flight.Price</td>
             <td>@flight.Availability</td>
-
+            <td><a asp-action="Specifications" asp-route-id="@flight.FlightId" class="btn btn-danger">Details</a></td>
             <!-- If this was car rental, create your own button would be here -->
         </tr>
     }

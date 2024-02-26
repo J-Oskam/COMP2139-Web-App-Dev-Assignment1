@@ -8659,11 +8659,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\exurl\\source\\repos\\Assignment 1\\Assignment1\\Assignment1.csproj",
+      "projectUniqueName": "C:\\Users\\exurl\\Source\\Repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Assignment1.csproj",
       "projectName": "Assignment1",
-      "projectPath": "C:\\Users\\exurl\\source\\repos\\Assignment 1\\Assignment1\\Assignment1.csproj",
+      "projectPath": "C:\\Users\\exurl\\Source\\Repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Assignment1.csproj",
       "packagesPath": "C:\\Users\\exurl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\exurl\\source\\repos\\Assignment 1\\Assignment1\\obj\\",
+      "outputPath": "C:\\Users\\exurl\\Source\\Repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\exurl\\AppData\\Roaming\\NuGet\\NuGet.Config",

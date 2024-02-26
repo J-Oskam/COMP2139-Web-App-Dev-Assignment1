@@ -1,33 +1,61 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\exurl\\source\\repos\\Assignment 1\\Assignment1\\",
+  "WorkspaceRootPath": "C:\\Users\\exurl\\source\\repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|c:\\users\\exurl\\source\\repos\\assignment 1\\assignment1\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|c:\\users\\exurl\\source\\repos\\comp2139-web-app-dev-assignment1\\assignment1\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|c:\\users\\exurl\\source\\repos\\assignment 1\\assignment1\\controllers\\transportationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|solutionrelative:controllers\\transportationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|c:\\users\\exurl\\source\\repos\\comp2139-web-app-dev-assignment1\\assignment1\\models\\carrental.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|solutionrelative:models\\carrental.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\exurl\\source\\repos\\Assignment 1\\Assignment1\\Migrations\\20240225005454_FlightMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240225005454_FlightMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|c:\\users\\exurl\\source\\repos\\comp2139-web-app-dev-assignment1\\assignment1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|c:\\users\\exurl\\source\\repos\\assignment 1\\assignment1\\models\\bookings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|solutionrelative:models\\bookings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|c:\\users\\exurl\\source\\repos\\comp2139-web-app-dev-assignment1\\assignment1\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|solutionrelative:migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C8D75094-1B2D-4B7C-AC49-6DD90717AD05}|..\\..\\COMP2129-W2024\\COMP2139-Lab1\\COMP2139-Lab1.csproj|c:\\users\\exurl\\source\\repos\\comp2129-w2024\\comp2139-lab1\\models\\projecttask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|c:\\users\\exurl\\source\\repos\\comp2139-web-app-dev-assignment1\\assignment1\\views\\carrental\\specifications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|solutionrelative:views\\carrental\\specifications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\exurl\\source\\repos\\Assignment 1\\Assignment1\\Migrations\\FlightContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\FlightContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|c:\\users\\exurl\\source\\repos\\comp2139-web-app-dev-assignment1\\assignment1\\migrations\\20240225214349_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|solutionrelative:migrations\\20240225214349_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\exurl\\source\\repos\\Assignment 1\\Assignment1\\Data\\FlightContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\FlightContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|c:\\users\\exurl\\source\\repos\\comp2139-web-app-dev-assignment1\\assignment1\\views\\carrental\\bookflight.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|solutionrelative:views\\carrental\\bookflight.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|c:\\users\\exurl\\source\\repos\\comp2139-web-app-dev-assignment1\\assignment1\\views\\carrental\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|solutionrelative:views\\carrental\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|c:\\users\\exurl\\source\\repos\\comp2139-web-app-dev-assignment1\\assignment1\\views\\carrental\\flight.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|solutionrelative:views\\carrental\\flight.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|c:\\users\\exurl\\source\\repos\\comp2139-web-app-dev-assignment1\\assignment1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8D75094-1B2D-4B7C-AC49-6DD90717AD05}|..\\..\\COMP2129-W2024\\COMP2139-Lab1\\COMP2139-Lab1.csproj|c:\\users\\exurl\\source\\repos\\comp2129-w2024\\comp2139-lab1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|c:\\users\\exurl\\source\\repos\\comp2139-web-app-dev-assignment1\\assignment1\\migrations\\20240225232709_rentalmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|solutionrelative:migrations\\20240225232709_rentalmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\exurl\\source\\repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Migrations\\20240225232442_RentalMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240225232442_RentalMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|c:\\users\\exurl\\source\\repos\\comp2139-web-app-dev-assignment1\\assignment1\\controllers\\flightcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25F9D315-C265-4BFE-8761-644AD5A276FF}|Assignment1.csproj|solutionrelative:controllers\\flightcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,7 +65,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 174,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,89 +86,205 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "20240225005454_FlightMigration.cs",
-              "DocumentMoniker": "C:\\Users\\exurl\\source\\repos\\Assignment 1\\Assignment1\\Migrations\\20240225005454_FlightMigration.cs",
-              "RelativeDocumentMoniker": "Migrations\\20240225005454_FlightMigration.cs",
-              "ToolTip": "C:\\Users\\exurl\\source\\repos\\Assignment 1\\Assignment1\\Migrations\\20240225005454_FlightMigration.cs",
-              "RelativeToolTip": "Migrations\\20240225005454_FlightMigration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAyAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\exurl\\source\\repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\exurl\\source\\repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-25T00:54:54.666Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TransportationController.cs",
-              "DocumentMoniker": "C:\\Users\\exurl\\source\\repos\\Assignment 1\\Assignment1\\Controllers\\TransportationController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TransportationController.cs",
-              "ToolTip": "C:\\Users\\exurl\\source\\repos\\Assignment 1\\Assignment1\\Controllers\\TransportationController.cs",
-              "RelativeToolTip": "Controllers\\TransportationController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-25T00:39:41.845Z",
+              "WhenOpened": "2024-02-26T00:04:57.498Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Bookings.cs",
-              "DocumentMoniker": "C:\\Users\\exurl\\source\\repos\\Assignment 1\\Assignment1\\Models\\Bookings.cs",
-              "RelativeDocumentMoniker": "Models\\Bookings.cs",
-              "ToolTip": "C:\\Users\\exurl\\source\\repos\\Assignment 1\\Assignment1\\Models\\Bookings.cs",
-              "RelativeToolTip": "Models\\Bookings.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\exurl\\source\\repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\exurl\\source\\repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAIUAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-25T00:39:39.529Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FlightContext.cs",
-              "DocumentMoniker": "C:\\Users\\exurl\\source\\repos\\Assignment 1\\Assignment1\\Migrations\\FlightContext.cs",
-              "RelativeDocumentMoniker": "Migrations\\FlightContext.cs",
-              "ToolTip": "C:\\Users\\exurl\\source\\repos\\Assignment 1\\Assignment1\\Migrations\\FlightContext.cs",
-              "RelativeToolTip": "Migrations\\FlightContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-25T00:39:18.039Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FlightContext.cs",
-              "DocumentMoniker": "C:\\Users\\exurl\\source\\repos\\Assignment 1\\Assignment1\\Data\\FlightContext.cs",
-              "RelativeDocumentMoniker": "Data\\FlightContext.cs",
-              "ToolTip": "C:\\Users\\exurl\\source\\repos\\Assignment 1\\Assignment1\\Data\\FlightContext.cs",
-              "RelativeToolTip": "Data\\FlightContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-25T00:38:35.415Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\exurl\\source\\repos\\Assignment 1\\Assignment1\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\exurl\\source\\repos\\Assignment 1\\Assignment1\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-25T00:38:16.198Z",
+              "WhenOpened": "2024-02-26T00:00:08.745Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ProjectTask.cs",
-              "DocumentMoniker": "C:\\Users\\exurl\\source\\repos\\COMP2129-W2024\\COMP2139-Lab1\\Models\\ProjectTask.cs",
-              "RelativeDocumentMoniker": "..\\..\\COMP2129-W2024\\COMP2139-Lab1\\Models\\ProjectTask.cs",
-              "ToolTip": "C:\\Users\\exurl\\source\\repos\\COMP2129-W2024\\COMP2139-Lab1\\Models\\ProjectTask.cs",
-              "RelativeToolTip": "..\\..\\COMP2129-W2024\\COMP2139-Lab1\\Models\\ProjectTask.cs",
+              "Title": "Specifications.cshtml",
+              "DocumentMoniker": "C:\\Users\\exurl\\source\\repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Views\\CarRental\\Specifications.cshtml",
+              "RelativeDocumentMoniker": "Views\\CarRental\\Specifications.cshtml",
+              "ToolTip": "C:\\Users\\exurl\\source\\repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Views\\CarRental\\Specifications.cshtml",
+              "RelativeToolTip": "Views\\CarRental\\Specifications.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-25T23:54:32.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BookFlight.cshtml",
+              "DocumentMoniker": "C:\\Users\\exurl\\source\\repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Views\\CarRental\\BookFlight.cshtml",
+              "RelativeDocumentMoniker": "Views\\CarRental\\BookFlight.cshtml",
+              "ToolTip": "C:\\Users\\exurl\\source\\repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Views\\CarRental\\BookFlight.cshtml",
+              "RelativeToolTip": "Views\\CarRental\\BookFlight.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-25T23:54:30.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Flight.cshtml",
+              "DocumentMoniker": "C:\\Users\\exurl\\source\\repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Views\\CarRental\\Flight.cshtml",
+              "RelativeDocumentMoniker": "Views\\CarRental\\Flight.cshtml",
+              "ToolTip": "C:\\Users\\exurl\\source\\repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Views\\CarRental\\Flight.cshtml",
+              "RelativeToolTip": "Views\\CarRental\\Flight.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-25T23:54:27.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\exurl\\Source\\Repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Views\\CarRental\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\CarRental\\Index.cshtml",
+              "ToolTip": "C:\\Users\\exurl\\Source\\Repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Views\\CarRental\\Index.cshtml",
+              "RelativeToolTip": "Views\\CarRental\\Index.cshtml",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAiwBMAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-25T23:48:42.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\exurl\\source\\repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\exurl\\source\\repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABoAAACaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-25T23:47:24.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\exurl\\source\\repos\\COMP2129-W2024\\COMP2139-Lab1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\COMP2129-W2024\\COMP2139-Lab1\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\exurl\\source\\repos\\COMP2129-W2024\\COMP2139-Lab1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "..\\..\\COMP2129-W2024\\COMP2139-Lab1\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAADIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-25T23:46:23.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20240225232709_RentalMigration.cs",
+              "DocumentMoniker": "C:\\Users\\exurl\\source\\repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Migrations\\20240225232709_RentalMigration.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240225232709_RentalMigration.cs",
+              "ToolTip": "C:\\Users\\exurl\\source\\repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Migrations\\20240225232709_RentalMigration.cs",
+              "RelativeToolTip": "Migrations\\20240225232709_RentalMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-25T23:27:09.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20240225232442_RentalMigration.cs",
+              "DocumentMoniker": "C:\\Users\\exurl\\source\\repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Migrations\\20240225232442_RentalMigration.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240225232442_RentalMigration.cs",
+              "ToolTip": "C:\\Users\\exurl\\source\\repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Migrations\\20240225232442_RentalMigration.cs",
+              "RelativeToolTip": "Migrations\\20240225232442_RentalMigration.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-25T00:36:05.875Z"
+              "WhenOpened": "2024-02-25T23:24:42.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FlightController.cs",
+              "DocumentMoniker": "C:\\Users\\exurl\\source\\repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Controllers\\FlightController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FlightController.cs",
+              "ToolTip": "C:\\Users\\exurl\\source\\repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Controllers\\FlightController.cs",
+              "RelativeToolTip": "Controllers\\FlightController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-25T23:22:11.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\exurl\\source\\repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\exurl\\source\\repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-25T23:21:50.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20240225214349_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\exurl\\source\\repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Migrations\\20240225214349_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240225214349_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\exurl\\source\\repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Migrations\\20240225214349_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20240225214349_InitialCreate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-25T23:20:59.583Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "e4b4fd4f-676f-4741-bc1d-d86adcdd4aa2",
+        "Display": 1,
+        "X": 693,
+        "Y": 275,
+        "Width": 1553,
+        "Height": 990,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CarRental.cs",
+              "DocumentMoniker": "C:\\Users\\exurl\\source\\repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Models\\CarRental.cs",
+              "RelativeDocumentMoniker": "Models\\CarRental.cs",
+              "ToolTip": "C:\\Users\\exurl\\source\\repos\\COMP2139-Web-App-Dev-Assignment1\\Assignment1\\Models\\CarRental.cs",
+              "RelativeToolTip": "Models\\CarRental.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-25T23:50:39.717Z",
+              "EditorCaption": ""
             }
           ]
         }
