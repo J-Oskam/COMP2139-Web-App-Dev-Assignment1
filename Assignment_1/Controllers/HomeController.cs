@@ -14,8 +14,9 @@ namespace Assignment_1.Controllers
             _db = db;
         }
 
-        public async Task<IActionResult> Index(string searchString)
+        public async Task<IActionResult> Index(string searchString) 
         {
+            
             var searchQuery = _db.Hotels
                                 .Include(h => h.City)
                                 .ThenInclude(c => c.Country)

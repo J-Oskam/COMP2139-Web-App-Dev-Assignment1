@@ -90,6 +90,34 @@ namespace Assignment_1.Data
                 }
             );
 
+            modelBuilder.Entity<CarRental>().HasData(
+                new CarRental
+                {
+                    RentalId = 30,
+                    Location = "Italy",
+                    RentalCompany = "Cars4U",
+                    Availability = 5,
+                    Price = 90,
+                    CarYear = 2007,
+                    CarMake = "Toyota",
+                    CarModel = "Camry",
+                    Specifications = "gray car"
+                },
+
+                new CarRental
+                {
+                    RentalId = 31,
+                    Location = "France",
+                    RentalCompany = "Cars4U",
+                    Availability = 3,
+                    Price = 60,
+                    CarYear = 2009,
+                    CarMake = "Honda",
+                    CarModel = "Civic",
+                    Specifications = "Red car"
+                }
+            );
+
             modelBuilder.Entity<Country>().HasData(
                 new Country { CountryId = 1, CountryName = "United States" },
                 new Country { CountryId = 2, CountryName = "Canada" },

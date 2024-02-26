@@ -48,6 +48,13 @@
     </dl>
 </div>
 <div>
-    <a asp-controller="User" asp-action="CreateGuestUser" asp-route-hotelId="@Model.HotelId" class="btn btn-primary">Book Now</a>
+    @if (ViewData["AddFlight"].ToString() == "Yes")
+    {
+        <a asp-action="Index" asp-controller="Flights" class="btn btn-primary">Continue to Book Flight</a>
+    }
+    else
+    {
+        <a asp-action="CreateGuestUser" asp-controller="User" class="btn btn-primary">Book Now</a>
+    }
     <a asp-action="Index" class="btn btn-outline-secondary">Back to List</a>
 </div>

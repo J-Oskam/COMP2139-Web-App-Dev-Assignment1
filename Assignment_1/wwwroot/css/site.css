@@ -19,4 +19,39 @@ html {
 
 body {
   margin-bottom: 60px;
+background-color: ghostwhite;
+}
+
+.container-fluid {
+    height: 50px;
+    background-color: lightsteelblue;
+}
+
+.nav-item:hover {
+    background-color: aliceblue;
+}
+
+.navbar {
+    background-color: lightsteelblue;
+    color: lightsteelblue;
+    padding-top: 0px;
+    padding-bottom: 0px
+}
+
+#searchBar {
+    background-color: lightsteelblue;
+    border: 1px solid white;
+    border-radius: 1%;
+    box-shadow: 1px 1px 5px black;
+}
+
+.card {
+    padding: 0px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px black;
+    background-color: ghostwhite;
+}
+
+h1 {
+    margin-top: 40px;
 }

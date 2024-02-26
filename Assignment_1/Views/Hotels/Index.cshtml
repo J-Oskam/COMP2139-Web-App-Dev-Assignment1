@@ -10,7 +10,7 @@
     <div class="form-group">
         <input type="text" class="form-control" name="searchString" placeholder="Search hotels..." value="@ViewData["CurrentSearch"]" />
     </div>
-    <button type="submit" class="btn btn-primary mt-2">Search</button>
+    <button type="submit" class="btn btn-secondary mt-2">Search</button>
 </form>
 
 @if (!Model.Any())
@@ -22,8 +22,8 @@ else
     <div class="row">
         @foreach (var hotel in Model)
         {
-            <div class="col-md-4">
-                <div class="card mb-4 shadow-sm">
+            <div class="card col-md-4 card">
+                <div class="card mb-0 m-1 shadow-sm">
                     <img src="@Url.Content($"~/images/hotels/{hotel.HotelId}/default.jpg")" class="card-img-top" style="height: 18em" alt="Image of @hotel.HotelName">
                     <div class="card-body">
                         <h5 class="card-title">@hotel.HotelName</h5>
@@ -34,7 +34,7 @@ else
                                 <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
                             }
                         </div>
-                        <a asp-action="Details" asp-route-id="@hotel.HotelId" class="btn btn-primary">View Details</a>
+                        <a asp-action="Details" asp-route-id="@hotel.HotelId" class="btn btn-secondary">View Details</a>
                     </div>
                 </div>
             </div>

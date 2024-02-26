@@ -15,12 +15,23 @@ namespace Assignment_1.Controllers
             _db = db;
         }
 
-        public async Task<IActionResult> Index(string searchString)
+        public async Task<IActionResult> Index(string searchString, DateOnly departureDate, DateOnly arrivalDate, string AddFlight)
         {
+            if (AddFlight == null)
+            {
+                HttpContext.Session.SetString("AddFlight", "No");
+            }
+            else
+            {
+                HttpContext.Session.SetString("AddFlight", AddFlight);
+                HttpContext.Session.SetString("ArrivalDate", arrivalDate.ToString());
+                HttpContext.Session.SetString("DepartureDate", departureDate.ToString());
+            }
+
             var searchQuery = _db.Hotels
-                                .Include(h => h.City)
-                                .ThenInclude(c => c.Country)
-                                .AsQueryable();
+                            .Include(h => h.City)
+                            .ThenInclude(c => c.Country)
+                            .AsQueryable();
 
             if (!String.IsNullOrEmpty(searchString))
             {
@@ -36,6 +47,11 @@ namespace Assignment_1.Controllers
 
         public IActionResult Details(int id)
         {
+            var addFlight = HttpContext.Session.GetString("AddFlight");
+            var departureDate = HttpContext.Session.GetString("DepartureDate");
+            var arrivalDate = HttpContext.Session.GetString("ArrivalDate");
+            ViewBag.AddFlight = addFlight;
+
             var hotel = _db.Hotels.Include(h => h.City).
                                    FirstOrDefault(h => h.HotelId == id);
 

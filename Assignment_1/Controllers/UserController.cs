@@ -19,6 +19,7 @@ namespace Assignment_1.Controllers
 
         public IActionResult CreateGuestUser(int hotelId)
         {
+            HttpContext.Session.SetInt32("HotelId", hotelId);
             ViewData["HotelId"] = hotelId;
             return View();
         }
@@ -39,3 +40,13 @@ namespace Assignment_1.Controllers
         }
     }
 }
+
+// Booking Creation to use following code;
+
+/*
+ * 
+ * var departureDate = HttpContext.Session.GetString("DepartureDate");
+ * var arrivalDate = HttpContext.Session.GetString("ArrivalDate");
+ * 
+ * 
+*/

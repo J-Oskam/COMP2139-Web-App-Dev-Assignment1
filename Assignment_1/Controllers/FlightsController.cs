@@ -19,6 +19,10 @@ namespace Assignment_1.Controllers
         // GET: FlightController
         public ActionResult Index()
         {
+
+            var departureDate = HttpContext.Session.GetString("DepartureDate");
+            var arrivalDate = HttpContext.Session.GetString("ArrivalDate");
+
             var flights = _db.Flights.OrderBy(m => m.FlightId).ToList();
             return View(flights);
         }
@@ -43,6 +47,9 @@ namespace Assignment_1.Controllers
         [HttpGet]
         public IActionResult BookFlight(int id)
         {
+            var departureDate = HttpContext.Session.GetString("DepartureDate");
+            var arrivalDate = HttpContext.Session.GetString("ArrivalDate");
+
             var flight = _db.Flights.FirstOrDefault(f => f.FlightId == id);
             if (flight == null)
             {
@@ -61,7 +68,8 @@ namespace Assignment_1.Controllers
             {
                 flight.Availability -= 1;
                 _db.SaveChanges();
-                return RedirectToAction(nameof(Index));
+                HttpContext.Session.SetInt32("FlightId", FlightId);
+                RedirectToAction("CreateGuestUser", "User");
 
                 //tie the flight to the user ID as well
 
@@ -78,18 +86,22 @@ namespace Assignment_1.Controllers
         }
 
         // POST: FlightController/Create
-        [HttpPost]
+        [HttpPost("Create")]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(Flight flight)
         {
-            try
+            if (flight.ArrivalTime < flight.DepartureTime)
             {
+                ModelState.AddModelError("ArrivalDate", "Arrival date must be after the departure date");
+                return View(flight);
+            }
+            if (ModelState.IsValid)
+            {
+                _db.Flights.Add(flight);
+                _db.SaveChanges();
                 return RedirectToAction(nameof(Index));
             }
-            catch
-            {
-                return View();
-            }
+            return View(flight);
         }
 
         public IActionResult Cancel() { return View(); }

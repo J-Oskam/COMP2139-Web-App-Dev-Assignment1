@@ -15,10 +15,10 @@ namespace Assignment_1.Models
 
         public int Price { get; set; }
 
-        [DataType(DataType.Date)]
+        [DataType(DataType.DateTime)]
         public DateTime DepartureTime { get; set; }
 
-        [DataType(DataType.Date)]
+        [DataType(DataType.DateTime)]
         public DateTime ArrivalTime { get; set; }
 
         public required string Location { get; set; }

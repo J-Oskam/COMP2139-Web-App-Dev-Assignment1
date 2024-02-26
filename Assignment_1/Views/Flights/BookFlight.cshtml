@@ -61,7 +61,7 @@
         </dd>
     </dl>
 
-    <form asp-action="BookFlightConfirm" method="post">
+    <form asp-controller="User" asp-action="CreateGuestUser" method="get">
         @Html.HiddenFor(model => model.FlightId)
         <input type="submit" value="BookFlight" class="btn btn-danger" />
         <a asp-action="Index">Back to List</a>
