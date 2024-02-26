@@ -25,7 +25,7 @@ namespace Assignment_1.Models
         public required string Specifications { get; set; }
 
         [ForeignKey("Booking")]
-        public int BookingId { get; set; }
+        public int? BookingId { get; set; }
         public virtual Booking? Booking { get; set; }
 
         public void rentCar()

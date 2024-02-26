@@ -21,6 +21,14 @@ namespace Assignment_1.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            
+            modelBuilder.Entity<BookingType>().HasData(
+                new BookingType
+                {
+                    BookingTypeId = 1,
+                    TypeName = "Hotel"
+                }
+            );
 
             modelBuilder.Entity<Booking>().HasData(
                 new Booking
@@ -30,7 +38,13 @@ namespace Assignment_1.Data
                     StartDate = new DateTime(2024, 3, 5),
                     EndDate = new DateTime(2024, 3, 15),
                     TotalPrice = 850.00,
-                    ConfirmationNumber = 45875
+                    ConfirmationNumber = 45875,
+                    userId = null,
+                    hotelId = null,
+                    flightId = null,
+                    cityId = null,
+                    rentalId = null,
+                    bookingTypeId = 1
                 },
                 new Booking
                 {
@@ -39,9 +53,15 @@ namespace Assignment_1.Data
                     StartDate = new DateTime(2025, 7, 6),
                     EndDate = new DateTime(2025, 8, 20),
                     TotalPrice = 760.50,
-                    ConfirmationNumber = 45875
+                    ConfirmationNumber = 45876,
+                    userId = null,
+                    hotelId = null,
+                    flightId = null,
+                    cityId = null,
+                    rentalId = null,
+                    bookingTypeId = 1
                 }
-            );
+            ); ; ;
 
             modelBuilder.Entity<Flight>().HasData(
                 new Flight

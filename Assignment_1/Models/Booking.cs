@@ -21,23 +21,20 @@ namespace Assignment_1.Models
 
         //foreign keys from the other tables and their navigation properties
         [MaxLength(10)]
-        public int userId { get; set; }//foreign key
-        public User? UserId { get; set; }//navigation property
+        public int? userId { get; set; }//foreign key
+        public User? User { get; set; }//navigation property
 
-        public int hotelId { get; set; }
-        public Hotel? HotelId { get; set; }
+        public int? hotelId { get; set; }
+        public Hotel? Hotel { get; set; }
 
-        public int flightId { get; set; }
-        public Flight? FlightId { get; set; }
+        public int? flightId { get; set; }
+        public Flight? Flight { get; set; }
 
-        public int countryId { get; set; }
-        public Country? CountryId { get; set; }
+        public int? cityId { get; set; }
+        public City? City { get; set; }
 
-        public int cityId { get; set; }
-        public City? CityId { get; set; }
-
-        public int rentalId { get; set; }
-        public CarRental? RentalId { get; set; }
+        public int? rentalId { get; set; }
+        public CarRental? CarRental { get; set; }
 
         public int bookingTypeId { get; set; }
         public BookingType? BookingType { get; set; }

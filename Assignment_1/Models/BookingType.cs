@@ -8,6 +8,6 @@ namespace Assignment_1.Models
         public int BookingTypeId { get; set; }
 
         [MaxLength(100)]
-        public string TypeName { get; set; }
+        public required string TypeName { get; set; }
     }
 }
