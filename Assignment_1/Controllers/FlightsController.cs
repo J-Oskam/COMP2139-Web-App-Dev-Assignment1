@@ -79,16 +79,16 @@ namespace Assignment_1.Controllers
         }
 
 
-        // GET: FlightController/Create
-        public ActionResult Create()
+        [HttpGet("CreateFlight")]
+        public ActionResult CreateFlight()
         {
             return View();
         }
 
         // POST: FlightController/Create
-        [HttpPost("Create")]
+        [HttpPost("CreateFlight")]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Flight flight)
+        public ActionResult CreateFlight(Flight flight)
         {
             if (flight.ArrivalTime < flight.DepartureTime)
             {
@@ -99,7 +99,7 @@ namespace Assignment_1.Controllers
             {
                 _db.Flights.Add(flight);
                 _db.SaveChanges();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index");
             }
             return View(flight);
         }

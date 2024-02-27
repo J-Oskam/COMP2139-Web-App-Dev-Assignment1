@@ -1,0 +1,80 @@
+﻿@model Booking
+
+@{
+    ViewData["Title"] = "Make a Booking";
+    List<string> cities = new List<string> { "New York", "Los Angeles", "Toronto", "Montreal", "Mexico City", "Guadalajara" };
+    List<string> hotels = new List<string> { "The Estate Hote", "Sunshine Vista Hotel", "Riverside Inn", "Ramada", "The Big Apple Hotel", "Central Hotel", "Trinity Hotel" };
+    List<string> airports = new List<string> { "Pearson International", "JFK International", "Monterrey International Airport" };
+    List<string> cars = new List<string> { "2015 Subaru Forester", "2017 Dodge Charger", "2018 Volkswagen Beetle", "2009 Pontiac Vibe", "1984 Cadillac Coupe De Ville" };
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h4>Project</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="City.CityName" class="control-label"></label>
+                <select asp-for="City.CityName" class="form-control">
+                    <option value="">Select a City</option>
+                    @foreach (var city in cities)
+                    {
+                        <option value="@city">@city</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Hotel.HotelName" class="control-label">Hotel</label>
+                <select asp-for="Hotel.HotelName" class="form-control">
+                    <option value="">Select a Hotel</option>
+                    @foreach (var hotel in hotels)
+                    {
+                        <option value="@hotel">@hotel</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Flight.Airport" class="control-label">Airport</label>
+                <select asp-for="Flight.Airport" class="form-control">
+                    <option value="">Select an Airport</option>
+                    @foreach (var airport in airports)
+                    {
+                        <option value="@airport">@airport</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="CarRental.CarModel" class="control-label">Vehicle Model</label>
+                <select asp-for="CarRental.CarModel" class="form-control">
+                    <option value="">Select a vehicle model</option>
+                    @foreach (var car in cars)
+                    {
+                        <option value="@car">@car</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="StartDate" class="control-label">Start Date</label>
+                <input asp-for="StartDate" class="form-control" readonly value="@ViewBag.DepartureDate" />
+            </div>
+            <div class="form-group">
+                <label asp-for="EndDate" class="control-label">End Date</label>
+                <input asp-for="EndDate" class="form-control" readonly value="@ViewBag.ArrivalDate" />
+            </div>
+            <div class="form-group mt-3">
+                <input type="submit" value="Create" class="btn btn-primary" />
+                @* <a asp-action="Confirm" class="btn btn-primary">Create Booking</a> *@
+                <a asp-action="Index" class="btn btn-warning">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

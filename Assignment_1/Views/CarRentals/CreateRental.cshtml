@@ -1,0 +1,103 @@
+﻿@model Assignment_1.Models.CarRental
+
+@{
+    ViewData["Title"] = "Create Car Rental";
+}
+
+
+<h4>Rental</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-controller="CarRentals" asp-action="CreateRental" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Location" class="control-label"></label>
+                <select asp-for="Location" class="form-control">
+                    <option value="">Choose your destination</option>
+                    <option value="Los Angeles">Los Angeles</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Atlanta">Atlanta</option>
+                </select>
+                <span asp-validation-for="Location" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CarYear" class="control-label"></label>
+                <input asp-for="CarYear" class="form-control" />
+                <span asp-validation-for="CarYear" class="text-danger"></span>
+            </div>
+
+            <!-- drop down menu syntax above -->
+            <div class="form-group">
+                <label asp-for="CarMake" class="control-label"></label>
+                <select asp-for="CarMake" class="form-control">
+                    <option value="">Choose the make of the car</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Jeep">Jeep</option>
+                </select>
+                <span asp-validation-for="CarMake" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CarModel" class="control-label"></label>
+                <select asp-for="CarModel" class="form-control">
+                    <option value="">Choose the model of the car</option>
+                    <option value="Carolla">Carolla</option>
+                    <option value="Civic">Civic</option>
+                    <option value="F-150">F-150</option>
+                    <option value="Wrangler">Wrangler</option>
+                </select>
+                <span asp-validation-for="CarModel" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="RentalCompany" class="control-label"></label>
+                <select asp-for="RentalCompany" class="form-control">
+                    <option value="">Choose your Rental Company</option>
+                    <option value="Cars 4 U">Cars 4 U</option>
+                    <option value="Wheelhouse">Wheelhouse</option>
+                    <option value="Handy Car Rentals">Handy Car Rentals</option>
+                </select>
+                <span asp-validation-for="RentalCompany" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Availability" class="control-label"></label>
+                <input asp-for="Availability" class="form-control" />
+                <span asp-validation-for="Availability" class="text-danger"></span>
+            </div>
+
+
+
+            <div class="form-group">
+                <label asp-for="Specifications" class="control-label"></label>
+                <input asp-for="Specifications" class="form-control" />
+                <span asp-validation-for="Specifications" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="CreateRental" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-warning">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to Rental List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
