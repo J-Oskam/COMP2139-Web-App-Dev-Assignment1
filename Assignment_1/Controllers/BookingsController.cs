@@ -54,7 +54,7 @@ namespace Assignment_1.Controllers
                 return RedirectToAction("Index");
             }
             //ViewBag.Cities = new SelectList(_db.Cities, "CityId", "CityName");
-            return View(booking);
+            return RedirectToAction("Index", "Home");
         }
 
         public IActionResult Confirm()
