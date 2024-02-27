@@ -28,25 +28,20 @@ namespace Assignment_1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateGuestUser(User guestUser, int hotelId)
         {
+            var departureDate = HttpContext.Session.GetString("DepartureDate");
+            var arrivalDate = HttpContext.Session.GetString("ArrivalDate");
+            ViewBag.DepartureDate = departureDate;
+            ViewBag.ArrivalDate = arrivalDate;
+
             if (ModelState.IsValid)
             {
                 guestUser.IsGuest = true;
                 _db.Users.Add(guestUser);
                 await _db.SaveChangesAsync();
-                return RedirectToAction("CreateBooking", "Bookings", new { hotelId = hotelId, userId = guestUser.UserId });
+                return RedirectToAction("Create", "Bookings", new { hotelId = hotelId, userId = guestUser.UserId });
             }
 
             return View(guestUser);
         }
     }
 }
-
-// Booking Creation to use following code;
-
-/*
- * 
- * var departureDate = HttpContext.Session.GetString("DepartureDate");
- * var arrivalDate = HttpContext.Session.GetString("ArrivalDate");
- * 
- * 
-*/

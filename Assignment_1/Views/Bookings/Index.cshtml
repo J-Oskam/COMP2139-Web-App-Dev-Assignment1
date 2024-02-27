@@ -1,0 +1,40 @@
+﻿@model List<Booking>
+@{
+    ViewData["Title"] = "Summary of Bookings";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@if (Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Booking Date</th>
+                <th>Start Date</th>
+                <th>Return Date</th>
+                <th>Total Price</th>
+                <th>Confirmation Number</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var booking in Model)
+            {
+                <tr>
+                    <td>@booking.BookingDate</td>
+                    <td>@booking.StartDate</td>
+                    <td>@booking.EndDate</td>
+                    <td>@booking.TotalPrice</td>
+                    <td>@booking.ConfirmationNumber</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>You currently have no bookings.</p>
+}
+
+<a asp-controller="bookings" asp-action="Create" class="btn btn-primary">Make a booking</a>

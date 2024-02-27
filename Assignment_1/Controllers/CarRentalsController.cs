@@ -70,25 +70,25 @@ namespace Assignment_1.Controllers
             return NotFound();
         }
 
-        // GET: CarRentalsController/Create
-        public ActionResult Create()
+        [HttpGet("CreateRental")]
+        public ActionResult CreateRental()
         {
             return View();
         }
 
-        // POST: CarRentalsController/Create
-        [HttpPost]
+        // POST: Rentals controller create
+        [HttpPost("CreateRental")]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult CreateRental(CarRental rental)
         {
-            try
+
+            if (ModelState.IsValid)
             {
-                return RedirectToAction(nameof(Index));
+                _db.CarRentals.Add(rental);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
             }
-            catch
-            {
-                return View();
-            }
+            return View(rental);
         }
 
         // GET: CarRentalsController/Edit/5
