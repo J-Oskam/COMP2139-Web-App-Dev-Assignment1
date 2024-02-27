@@ -1,0 +1,112 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: ghostwhite;
+}
+
+.container-fluid {
+    height: 50px;
+    background-color: #3468C0;
+}
+
+.nav-item:hover {
+    background-color: #86A7FC;
+}
+
+.navbar {
+    background-color: lightsteelblue;
+    color: lightsteelblue;
+    padding-top: 0px;
+    padding-bottom: 0px
+}
+
+#searchBar {
+    background-color: lightsteelblue;
+    border: 1px solid white;
+    border-radius: 1%;
+    box-shadow: 1px 1px 5px black;
+}
+
+.card {
+    padding: 0px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px black;
+    background-color: ghostwhite;
+}
+
+h1 {
+    margin-top: 40px;
+}
+
+body {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 5%, rgba(255,221,149,1) 100%);
+}
+
+.navbar-light .navbar-brand {
+    color: #FF9843;
+}
+
+    .navbar-light .navbar-brand:hover {
+        color: #FFDD95;
+    }
+
+
+.text-dark {
+    color: #FF9843 !important;
+}
+
+    .text-dark:hover {
+        color: #FFDD95 !important;
+        background-color: #3468C0;
+    }
+
+h1.display-4 {
+    color: #3468C0;
+}
+
+#searchBar {
+    background-color: #3468C0;
+}
+
+.btn-secondary {
+    background-color: #FF9843;
+}
+
+    .btn-secondary:hover {
+        background-color: #FFDD95;
+    }
+
+.card-header {
+    background-color: #86A7FC;
+}
+
+.btn-danger {
+    background-color: #3468C0;
+}
+
+    .btn-danger:hover {
+        background-color: #86A7FC;
+    }
+
+.text-center, h2 {
+    color: #3468C0;
+}

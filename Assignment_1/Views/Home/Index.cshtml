@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Assignment_1.Models.Hotel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="top text-center">
+    <h1 class="display-4">Bookings Paradise</h1>
+    <p class="mt-2 mb-5">Learn about <a href="https://learn.microsoft.com/aspnet/core">our exclusive benefits!</a></p>
+</div>
+
+<div id="searchBar">
+    <form asp-controller="Hotels" asp-action="Index" method="get" class="mb-3 mt-2 align-content-lg-around">
+        <div class="card-header m-5 border-4 shadow-sm pt-3 pb-3">
+            <div class="form-group align-content-center ms-lg-3">
+                <input type="text" class="form-control-lg col-lg-4 ms-3 me-2 col-md-12" name="searchString" placeholder="Destination..." value="@ViewData["CurrentSearch"]" />
+                <input type="date" class="col-form-label-lg col-md-2 me-2" name="departureDate" />
+                <input type="date" class="col-form-label-lg col-md-2" name="arrivalDate" />
+                <input type="radio" class="ms-3" name="AddFlight" value="Yes" />
+                <label for="AddFlight"><strong>Add</strong>  <i class="fa-sharp fa-solid fa-plane"></i></label>
+
+                <button type="submit" class="btn btn-secondary mb-2 btn-lg ms-5">Search</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<hr class="btn-outline-primary" />
+
+@if (!Model.Any())
+{
+    <p>No hotels found.</p>
+}
+else
+{
+    <div class="row">
+        @foreach (var hotel in Model)
+        {
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="@Url.Content($"~/images/hotels/{hotel.HotelId}/default.jpg")" class="card-img-top" style="height: 18em" alt="Image of @hotel.HotelName">
+                    <div class="card-body">
+                        <h5 class="card-title">@hotel.HotelName</h5>
+                        <p class="card-text">@hotel.City.CityName, @hotel.City.Country.CountryName</p>
+                        <div class="mb-2">
+                            @for (int i = 0; i < hotel.Rating; i++)
+                            {
+                                <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            }
+                        </div>
+                        <a asp-action="Details" asp-route-id="@hotel.HotelId" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}

@@ -1,0 +1,59 @@
+﻿@model List<CarRental>
+@{
+    ViewBag.Title = "Rental List";
+}
+
+<title>Rental Index</title>
+
+<h1>Rental list</h1>
+
+<div id="searchBar">
+    <form asp-controller="CarRentals" asp-action="Index" method="get" class="mb-3 mt-2 align-content-lg-around">
+        <div class="card-header m-5 border-4 shadow-sm pt-3 pb-3">
+            <div class="form-group align-content-center ms-lg-3">
+                <input type="text" class="form-control-lg col-lg-4 ms-3 me-2 col-md-12" name="searchString" placeholder="Rental Details..." value="@ViewData["CurrentSearch"]" />
+
+                <button type="submit" class="btn btn-secondary mb-2 btn-lg ms-5">Search</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Location</th>
+            <th>Year</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Price</th>
+            <th>Company</th>
+            <th>Availability</th>
+            <th>Specifications</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var carRental in Model)
+        {
+            <tr>
+                <td><a asp-action="BookRental" asp-route-id="@carRental.RentalId" class="btn btn-danger">Book</a></td>
+                <td>@carRental.Location</td>
+                <td>@carRental.CarYear</td>
+                <td>@carRental.CarMake</td>
+                <td>@carRental.CarModel</td>
+                <td>@carRental.Price</td>
+                <td>@carRental.RentalCompany</td>
+                <td>@carRental.Availability</td>
+
+                <td><a asp-action="Specifications" asp-route-id="@carRental.RentalId" class="btn btn-danger">Details</a></td>
+                <!-- If this was car rental, create your own button would be here -->
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p>
+    <a class="nav-link text-dark" asp-area="" asp-controller="CarRentals" asp-action="CreateRental">Create Car Rental</a>
+</p>
