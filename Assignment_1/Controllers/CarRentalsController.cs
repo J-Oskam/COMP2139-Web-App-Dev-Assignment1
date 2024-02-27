@@ -15,13 +15,25 @@ namespace Assignment_1.Controllers
         {
             _db = db;
         }
-        // GET: CarRentalsController
         [HttpGet]
-        public IActionResult Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            var carRentals = _db.CarRentals.OrderBy(r => r.RentalId).ToList();
+            //var departureDate = HttpContext.Session.GetString("DepartureDate");
+            //var arrivalDate = HttpContext.Session.GetString("ArrivalDate");
 
-            return View(carRentals);
+            var searchQuery = from r in _db.CarRentals
+                              select r;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                searchQuery = searchQuery.Where(r => r.Location.Contains(searchString) ||
+                                                     r.CarModel.Contains(searchString) ||
+                                                     r.CarMake.Contains(searchString) ||
+                                                     r.RentalCompany.Contains(searchString));
+            }
+
+            var flights = await searchQuery.ToListAsync();
+            return View(flights);
         }
 
         // GET: CarRentalsController/Details/5

@@ -1,0 +1,70 @@
+﻿@model Booking
+
+@{
+    ViewData["Title"] = "Confirm Booking";
+}
+
+<h1>@ViewData["Title"]</h1>
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StartDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StartDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.EndDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EndDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.City.CityName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.City.CityName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Hotel.HotelName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Hotel.HotelName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.passengers)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.passengers)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.numberOfDays)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.numberOfDays)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TotalPrice)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TotalPrice)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ConfirmationNumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ConfirmationNumber)
+        </dd>
+    </dl>
+    @*     <form asp-action="Confirm" method="post">
+    @Html.HiddenFor(model => model.BookingId)
+    <input type="submit" value="Confirm" class="btn btn-primary" />
+    <a asp-action="Create">Back</a>
+    </form> *@
+</div>
+
+@using (Html.BeginForm("Create", "Bookings", FormMethod.Post))
+{
+    <input type="submit" value="Confirm Booking" class="btn btn-primary" />
+    <a href="@Url.Action("Create", "Bookings")" class="btn btn-default">Cancel</a>
+}

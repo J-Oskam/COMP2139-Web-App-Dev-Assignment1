@@ -15,6 +15,10 @@ namespace Assignment_1.Models
         [DataType(DataType.Date)]
         public DateTime EndDate { get; set; }
 
+        public int? passengers { get; set; }
+
+        public int? numberOfDays { get; set; }
+
         public double TotalPrice { get; set; } //needs to be 8 digits with 2 decimal places
 
         public int ConfirmationNumber { get; set; } //unique

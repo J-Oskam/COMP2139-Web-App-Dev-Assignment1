@@ -51,7 +51,7 @@ namespace Assignment_1.Controllers
             {
                 _db.Bookings.Add(booking);
                 _db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Confirm");
             }
             //ViewBag.Cities = new SelectList(_db.Cities, "CityId", "CityName");
             return View(booking);

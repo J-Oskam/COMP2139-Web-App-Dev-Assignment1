@@ -17,16 +17,25 @@ namespace Assignment_1.Controllers
             _db = db;
         }
         // GET: FlightController
-        public ActionResult Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-
             var departureDate = HttpContext.Session.GetString("DepartureDate");
             var arrivalDate = HttpContext.Session.GetString("ArrivalDate");
 
-            var flights = _db.Flights.OrderBy(m => m.FlightId).ToList();
+            var searchQuery = from f in _db.Flights
+                              select f;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                searchQuery = searchQuery.Where(f => f.Location.Contains(searchString) ||
+                                                     f.Airport.Contains(searchString) ||
+                                                     f.Airline.Contains(searchString));
+            }
+
+            var flights = await searchQuery.ToListAsync();
             return View(flights);
         }
-
+        
         // GET: FlightController/Details/5
 
         public ActionResult Details(int id)

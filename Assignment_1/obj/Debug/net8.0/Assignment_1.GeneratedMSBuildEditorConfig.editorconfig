@@ -9,91 +9,95 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Assignment_1
 build_property.RootNamespace = Assignment_1
-build_property.ProjectDir = C:\Users\JPAGo\Desktop\Test_Project\Assignment_1\
+build_property.ProjectDir = C:\Users\JPAGo\Desktop\COMP_Portal\Web_Application_Development_39\Project\Test_Project\Assignment_1\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\JPAGo\Desktop\Test_Project\Assignment_1
+build_property.MSBuildProjectDirectory = C:\Users\JPAGo\Desktop\COMP_Portal\Web_Application_Development_39\Project\Test_Project\Assignment_1
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/JPAGo/Desktop/Test_Project/Assignment_1/Views/Bookings/Create.cshtml]
+[C:/Users/JPAGo/Desktop/COMP_Portal/Web_Application_Development_39/Project/Test_Project/Assignment_1/Views/Bookings/Confirm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcQ29uZmlybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JPAGo/Desktop/COMP_Portal/Web_Application_Development_39/Project/Test_Project/Assignment_1/Views/Bookings/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JPAGo/Desktop/Test_Project/Assignment_1/Views/Bookings/Index.cshtml]
+[C:/Users/JPAGo/Desktop/COMP_Portal/Web_Application_Development_39/Project/Test_Project/Assignment_1/Views/Bookings/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JPAGo/Desktop/Test_Project/Assignment_1/Views/CarRentals/BookRental.cshtml]
+[C:/Users/JPAGo/Desktop/COMP_Portal/Web_Application_Development_39/Project/Test_Project/Assignment_1/Views/CarRentals/BookRental.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyUmVudGFsc1xCb29rUmVudGFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JPAGo/Desktop/Test_Project/Assignment_1/Views/CarRentals/CreateRental.cshtml]
+[C:/Users/JPAGo/Desktop/COMP_Portal/Web_Application_Development_39/Project/Test_Project/Assignment_1/Views/CarRentals/CreateRental.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyUmVudGFsc1xDcmVhdGVSZW50YWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JPAGo/Desktop/Test_Project/Assignment_1/Views/CarRentals/Index.cshtml]
+[C:/Users/JPAGo/Desktop/COMP_Portal/Web_Application_Development_39/Project/Test_Project/Assignment_1/Views/CarRentals/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyUmVudGFsc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JPAGo/Desktop/Test_Project/Assignment_1/Views/CarRentals/Specifications.cshtml]
+[C:/Users/JPAGo/Desktop/COMP_Portal/Web_Application_Development_39/Project/Test_Project/Assignment_1/Views/CarRentals/Specifications.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyUmVudGFsc1xTcGVjaWZpY2F0aW9ucy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JPAGo/Desktop/Test_Project/Assignment_1/Views/Flights/BookFlight.cshtml]
+[C:/Users/JPAGo/Desktop/COMP_Portal/Web_Application_Development_39/Project/Test_Project/Assignment_1/Views/Flights/BookFlight.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxpZ2h0c1xCb29rRmxpZ2h0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JPAGo/Desktop/Test_Project/Assignment_1/Views/Flights/CreateFlight.cshtml]
+[C:/Users/JPAGo/Desktop/COMP_Portal/Web_Application_Development_39/Project/Test_Project/Assignment_1/Views/Flights/CreateFlight.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxpZ2h0c1xDcmVhdGVGbGlnaHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JPAGo/Desktop/Test_Project/Assignment_1/Views/Flights/Index.cshtml]
+[C:/Users/JPAGo/Desktop/COMP_Portal/Web_Application_Development_39/Project/Test_Project/Assignment_1/Views/Flights/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxpZ2h0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JPAGo/Desktop/Test_Project/Assignment_1/Views/Flights/Specifications.cshtml]
+[C:/Users/JPAGo/Desktop/COMP_Portal/Web_Application_Development_39/Project/Test_Project/Assignment_1/Views/Flights/Specifications.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxpZ2h0c1xTcGVjaWZpY2F0aW9ucy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JPAGo/Desktop/Test_Project/Assignment_1/Views/Home/Index.cshtml]
+[C:/Users/JPAGo/Desktop/COMP_Portal/Web_Application_Development_39/Project/Test_Project/Assignment_1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JPAGo/Desktop/Test_Project/Assignment_1/Views/Home/Privacy.cshtml]
+[C:/Users/JPAGo/Desktop/COMP_Portal/Web_Application_Development_39/Project/Test_Project/Assignment_1/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JPAGo/Desktop/Test_Project/Assignment_1/Views/Hotels/Details.cshtml]
+[C:/Users/JPAGo/Desktop/COMP_Portal/Web_Application_Development_39/Project/Test_Project/Assignment_1/Views/Hotels/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JPAGo/Desktop/Test_Project/Assignment_1/Views/Hotels/Index.cshtml]
+[C:/Users/JPAGo/Desktop/COMP_Portal/Web_Application_Development_39/Project/Test_Project/Assignment_1/Views/Hotels/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JPAGo/Desktop/Test_Project/Assignment_1/Views/Shared/Error.cshtml]
+[C:/Users/JPAGo/Desktop/COMP_Portal/Web_Application_Development_39/Project/Test_Project/Assignment_1/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JPAGo/Desktop/Test_Project/Assignment_1/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/JPAGo/Desktop/COMP_Portal/Web_Application_Development_39/Project/Test_Project/Assignment_1/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JPAGo/Desktop/Test_Project/Assignment_1/Views/User/CreateGuestUser.cshtml]
+[C:/Users/JPAGo/Desktop/COMP_Portal/Web_Application_Development_39/Project/Test_Project/Assignment_1/Views/User/CreateGuestUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGVHdWVzdFVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JPAGo/Desktop/Test_Project/Assignment_1/Views/_ViewImports.cshtml]
+[C:/Users/JPAGo/Desktop/COMP_Portal/Web_Application_Development_39/Project/Test_Project/Assignment_1/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JPAGo/Desktop/Test_Project/Assignment_1/Views/_ViewStart.cshtml]
+[C:/Users/JPAGo/Desktop/COMP_Portal/Web_Application_Development_39/Project/Test_Project/Assignment_1/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JPAGo/Desktop/Test_Project/Assignment_1/Views/Shared/_Layout.cshtml]
+[C:/Users/JPAGo/Desktop/COMP_Portal/Web_Application_Development_39/Project/Test_Project/Assignment_1/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-jispjsosog

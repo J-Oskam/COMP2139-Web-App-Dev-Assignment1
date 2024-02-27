@@ -20,14 +20,16 @@ namespace Assignment_1.Controllers
             if (string.IsNullOrEmpty(AddFlight))
             {
                 HttpContext.Session.SetString("AddFlight", "No");
-                HttpContext.Session.SetString("ArrivalDate", arrivalDate.Value.ToString());
-                HttpContext.Session.SetString("DepartureDate", departureDate.Value.ToString());
             }
             else
             {
                 HttpContext.Session.SetString("AddFlight", AddFlight);
-                HttpContext.Session.SetString("ArrivalDate", arrivalDate.Value.ToString());
-                HttpContext.Session.SetString("DepartureDate", departureDate.Value.ToString());
+            }
+
+            if (arrivalDate.HasValue && departureDate.HasValue)
+            {
+                HttpContext.Session.SetString("ArrivalDate", arrivalDate.Value.ToString("yyyy-MM-dd"));
+                HttpContext.Session.SetString("DepartureDate", departureDate.Value.ToString("yyyy-MM-dd"));
             }
 
             var searchQuery = _db.Hotels
