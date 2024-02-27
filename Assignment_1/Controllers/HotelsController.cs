@@ -15,22 +15,19 @@ namespace Assignment_1.Controllers
             _db = db;
         }
 
-        public async Task<IActionResult> Index(string searchString, DateOnly? departureDate, DateOnly? arrivalDate, string? AddFlight)
+        public async Task<IActionResult> Index(string searchString, DateOnly? departureDate, DateOnly? arrivalDate, string AddFlight)
         {
-
             if (string.IsNullOrEmpty(AddFlight))
             {
                 HttpContext.Session.SetString("AddFlight", "No");
+                HttpContext.Session.SetString("ArrivalDate", arrivalDate.Value.ToString());
+                HttpContext.Session.SetString("DepartureDate", departureDate.Value.ToString());
             }
             else
             {
                 HttpContext.Session.SetString("AddFlight", AddFlight);
-            }
-
-            if (arrivalDate.HasValue && departureDate.HasValue)
-            {
-                HttpContext.Session.SetString("ArrivalDate", arrivalDate.Value.ToString("yyyy-MM-dd"));
-                HttpContext.Session.SetString("DepartureDate", departureDate.Value.ToString("yyyy-MM-dd"));
+                HttpContext.Session.SetString("ArrivalDate", arrivalDate.Value.ToString());
+                HttpContext.Session.SetString("DepartureDate", departureDate.Value.ToString());
             }
 
             var searchQuery = _db.Hotels
